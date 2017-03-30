@@ -26,7 +26,6 @@ FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 
 build_path = '../build/'
-# os_result = os.path.abspath(build_path)
 FREEZER_DESTINATION = build_path
 
 
@@ -38,13 +37,12 @@ freezer = Freezer(app)
 @app.route('/')
 def index():
     page = pages.get_or_404('index')
-    return render_template('default.html', page=page)
-    # return render_template('index.html')
+    return render_template('index.html', page=page)
 
-@app.route('/about/')
+@app.route('/about.html')
 def about():
     page = pages.get_or_404('about')
-    return render_template('default.html', page=page)
+    return render_template('about.html', page=page)
 
 if __name__ == '__main__':
     handler = RotatingFileHandler('logs/mehemken.io.log', maxBytes=10000, backupCount=1)
