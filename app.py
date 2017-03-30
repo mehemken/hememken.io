@@ -13,22 +13,21 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-b', '--build',
         help='Build the static site.',
         action='store_true')
+parser.add_argument('-p', '--path',
+        help='Print the build path.',
+        action='store_true')
 
 from flask import Flask, render_template
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
-# os.chdir('..')
-# BUILD_PATH = os.getcwd()
-# os.chdir('app/')
-
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 
-build_path = '~/Documents/git/mehemken.io/build/'
-result = os.path.abspath(build_path)
-FREEZER_DESTINATION = result
+build_path = '../build/'
+# os_result = os.path.abspath(build_path)
+FREEZER_DESTINATION = build_path
 
 
 app = Flask(__name__)
@@ -51,12 +50,18 @@ if __name__ == '__main__':
     app.logger.addHandler(handler)
     args = parser.parse_args()
 
+    if args.path:
+        app.logger.info(FREEZER_DESTINATION)
+        sys.exit()
+
     if args.build:
         app.logger.info('Do you want to build?')
         ans = input('yes/no: ')
         if ans == 'yes':
-            # freezer.freeze()
-            app.logger.debug('This is where the build happens.')
+            try:
+                freezer.freeze()
+            except:
+                app.logger.exception('There was an exception during the freeze.')
         else:
             app.logger.info('build aborted')
     else:
