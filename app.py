@@ -37,7 +37,9 @@ freezer = Freezer(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    page = pages.get_or_404('index')
+    return render_template('default.html', page=page)
+    # return render_template('index.html')
 
 @app.route('/about/')
 def about():

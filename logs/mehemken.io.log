@@ -30,3 +30,15 @@ Do you want to build?
 ../build/
 Do you want to build?
 build aborted
+../build/
+../build/
+Do you want to build?
+There was an exception during the freeze.
+Traceback (most recent call last):
+  File "/home/emilio/bin/mehio", line 64, in <module>
+    freezer.freeze()
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 157, in freeze
+    new_filename = self._build_one(url)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 286, in _build_one
+    % (response.status, url))
+ValueError: Unexpected status '404 NOT FOUND' on URL /about/
