@@ -60,18 +60,14 @@
     <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
-	  <h1>{{ title }}</h1>
+        <h1>The Boolean Array</h1>
       </div>
-
-{% block page_content %}
+        
     <p class="lead">Once upon a time there was a guy sitting on a couch. He had
     not eaten dinner yet. And he was about to go to jiu-jitsu class.</p>
     <p>He realized he needed to stop coding because he only has 20 min until
     open mat.</p>
     <h2>Foo</h2>
-    <p>He realized he needed to stop coding because he only has 20 min until
-    open mat.</p>
-{% endblock %}
 
     </div>
 
