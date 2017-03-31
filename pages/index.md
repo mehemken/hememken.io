@@ -1,5 +1,6 @@
 title: About me
 date: 2017-3-30
+lead: I write computer programs in python and build stuff on AWS.
 
 ##Under Construction
 
