@@ -1,3 +1,83 @@
+Do you want to build?
+build aborted
+Do you want to build?
+build aborted
+Do you want to build?
+build aborted
+Do you want to build?
+build aborted
+False
+Do you want to build?
+build aborted
+False
+Do you want to build?
+build aborted
+False
+Do you want to build?
+build aborted
+/home/emilio/Documents/git/mehemken.io/app/~/Documents/git/mehemken.io/build/foo.txt
+Do you want to build?
+build aborted
+/home/emilio/Documents/git/mehemken.io/app/~/Documents/git/mehemken.io/build
+Do you want to build?
+/home/emilio/Documents/git/mehemken.io/build
+/home/emilio/Documents/git/mehemken.io/build
+/home/emilio/Documents/git/mehemken.io/build
+/home/emilio/Documents/git/mehemken.io/build
+/home/emilio/Documents/git/mehemken.io/build
+../build/
+Do you want to build?
+../build/
+Do you want to build?
+build aborted
+../build/
+../build/
+Do you want to build?
+There was an exception during the freeze.
+Traceback (most recent call last):
+  File "/home/emilio/bin/mehio", line 64, in <module>
+    freezer.freeze()
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 157, in freeze
+    new_filename = self._build_one(url)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 286, in _build_one
+    % (response.status, url))
+ValueError: Unexpected status '404 NOT FOUND' on URL /about/
+Do you want to build?
+There was an exception during the freeze.
+Traceback (most recent call last):
+  File "/home/emilio/bin/mehio", line 64, in <module>
+    freezer.freeze()
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 157, in freeze
+    new_filename = self._build_one(url)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 286, in _build_one
+    % (response.status, url))
+ValueError: Unexpected status '404 NOT FOUND' on URL /about/
+Do you want to build?
+There was an exception during the freeze.
+Traceback (most recent call last):
+  File "/home/emilio/bin/mehio", line 64, in <module>
+    freezer.freeze()
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 157, in freeze
+    new_filename = self._build_one(url)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 286, in _build_one
+    % (response.status, url))
+ValueError: Unexpected status '404 NOT FOUND' on URL /about
+../build/
+Do you want to build?
+There was an exception during the freeze.
+Traceback (most recent call last):
+  File "./app.py", line 63, in <module>
+    freezer.freeze()
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 157, in freeze
+    new_filename = self._build_one(url)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 323, in _build_one
+    with open(filename, 'wb') as fd:
+IsADirectoryError: [Errno 21] Is a directory: '/home/emilio/Documents/git/mehemken.io/app/../build/about'
+Do you want to build?
+Do you want to build?
+Do you want to build?
+build aborted
+Do you want to build?
 There was an exception during the freeze.
 Traceback (most recent call last):
   File "./app.py", line 62, in <module>
@@ -36,8 +116,8 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "./app.py", line 45, in resume
-    return render_template('resume.html', page=page)
+  File "./app.py", line 45, in about
+    return render_template('about.html', page=page)
   File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
     context, ctx.app)
   File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
@@ -50,21 +130,20 @@ Traceback (most recent call last):
     reraise(exc_type, exc_value, tb)
   File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
     raise value.with_traceback(tb)
-  File "/home/emilio/Documents/git/mehemken.io/app/templates/resume.html", line 1, in top-level template code
+  File "/home/emilio/Documents/git/mehemken.io/app/templates/about.html", line 1, in top-level template code
     {% extends 'layout.html' %}
-  File "/home/emilio/Documents/git/mehemken.io/app/templates/layout.html", line 39, in top-level template code
-    <li><a href="{{ url_for('about') }}">Resume</a></li>
-  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/helpers.py", line 333, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1805, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/helpers.py", line 323, in url_for
-    force_external=external)
-  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/werkzeug/routing.py", line 1758, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'about'. Did you mean 'resume' instead?
+  File "/home/emilio/Documents/git/mehemken.io/app/templates/layout.html", line 34, in top-level template code
+    <a class="navbar-brand" href="{{ url_for(index) }}">mehemken.io</a>
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/helpers.py", line 280, in url_for
+    if endpoint[:1] == '.':
+jinja2.exceptions.UndefinedError: 'index' is undefined
+Do you want to build?
+Do you want to build?
+Do you want to build?
+Do you want to build?
+Do you want to build?
+Do you want to build?
+Do you want to build?
 Do you want to build?
 Do you want to build?
 Do you want to build?

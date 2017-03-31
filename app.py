@@ -39,10 +39,10 @@ def index():
     page = pages.get_or_404('index')
     return render_template('index.html', page=page)
 
-@app.route('/about.html')
-def about():
-    page = pages.get_or_404('about')
-    return render_template('about.html', page=page)
+@app.route('/resume/')
+def resume():
+    page = pages.get_or_404('resume')
+    return render_template('resume.html', page=page)
 
 if __name__ == '__main__':
     handler = RotatingFileHandler('logs/mehemken.io.log', maxBytes=10000, backupCount=1)
