@@ -77,3 +77,101 @@ Do you want to build?
 Do you want to build?
 Do you want to build?
 Do you want to build?
+Do you want to build?
+Do you want to build?
+Do you want to build?
+There was an exception during the freeze.
+Traceback (most recent call last):
+  File "./app.py", line 61, in <module>
+    sys.exit()
+SystemExit
+Freezing the current site.
+Site available at
+../build/
+Freezing the current site at
+../build/
+Freezing the current site at
+../build/
+Freeze completed successfully.
+Freezing the current site at
+../build/
+Freeze completed successfully.
+Freezing the current site at
+../build/
+Freeze completed successfully.
+Freezing the current site at
+../build/
+Freeze completed successfully.
+Freezing the current site at
+../build/
+Freeze completed successfully.
+Freezing the current site at
+../build/
+Freeze completed successfully.
+Freezing the current site at
+../build/
+Freeze completed successfully.
+Freezing the current site at
+../build/
+Freeze completed successfully.
+Freezing the current site at
+../build/files
+Freeze completed successfully.
+Freezing the current site at
+../build/files
+Freeze completed successfully.
+Freezing the current site at
+../build/files
+Freeze completed successfully.
+Freezing the current site at
+../build/files
+Freeze completed successfully.
+Freezing the current site at
+../build/files
+There was an exception during the freeze.
+Traceback (most recent call last):
+  File "./app.py", line 64, in <module>
+    freezer.freeze()
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 157, in freeze
+    new_filename = self._build_one(url)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask_frozen/__init__.py", line 268, in _build_one
+    base_url=base_url)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/werkzeug/test.py", line 778, in get
+    return self.open(*args, **kw)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/testing.py", line 127, in open
+    follow_redirects=follow_redirects)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/werkzeug/test.py", line 751, in open
+    response = self.run_wsgi_app(environ, buffered=buffered)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/werkzeug/test.py", line 668, in run_wsgi_app
+    rv = run_wsgi_app(self.application, environ, buffered=buffered)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/werkzeug/test.py", line 871, in run_wsgi_app
+    app_rv = app(environ, start_response)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1994, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1985, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1540, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/emilio/anaconda3/envs/frozen-flask/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 49, in resume_pdf
+    return url_for('static', filename='resume/resume.pdf')
+NameError: name 'url_for' is not defined
+Freezing the current site at
+../build/files
+Freeze completed successfully.
+Freezing the current site at
+../build/files
+Freeze completed successfully.
