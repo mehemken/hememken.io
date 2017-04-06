@@ -17,7 +17,7 @@ parser.add_argument('-p', '--path',
         help='Print the build path.',
         action='store_true')
 
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, send_from_directory
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
