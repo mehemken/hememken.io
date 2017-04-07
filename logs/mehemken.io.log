@@ -98,3 +98,6 @@ TypeError: 'list' object is not callable
 Freezing the current site at
 ../build/files
 Freeze completed successfully.
+Freezing the current site at
+../build/files
+Freeze completed successfully.
