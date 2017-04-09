@@ -20,14 +20,22 @@ parser.add_argument('-p', '--path',
 parser.add_argument('-c', '--commit',
         help='Commit latest changes to build master branch.',
         action='store_true')
+parser.add_argument('-t', '--test',
+        help='This will run the test suite on the development branch of the\
+        build repo. If all tests pass changes will be pushed to devel origin.',
+        action='store_true')
 
 
 
 if __name__ == '__main__':
 
-    logger.info('foo bar baz')
-
     args = parser.parse_args()
+
+    if args.test:
+        logger.info('This runs the test suite.')
+        """
+        Some code here.
+        """
 
     if args.commit:
         logger.info('This commits all changes to build master.')
