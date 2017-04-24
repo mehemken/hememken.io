@@ -3,6 +3,7 @@
 {% block page_content %}
     <h1>{{ page.title }}</h1>
     <p class="lead">{{ page.lead }}</p>
+    <p><a href="{{ resume }}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-download"></span> Download resume as pdf</a></p>
     <hr>
     {{ page.html|safe }}
 {% endblock %}

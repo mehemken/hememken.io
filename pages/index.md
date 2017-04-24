@@ -1,34 +1,31 @@
-title: About me
+title: Marco Hemken
 date: 2017-3-30
 lead: I write computer programs in python and build stuff on AWS.
 
+##About
+
+I'm a developer and operations engineer in Los Angeles, CA. Most of my code is done with Python, with which I've written several programs and tools that automate git, docker, vim, tmux, and firefox. I currently use AWS for a few personal services that I've written in the Flask. Those are served up with Nginx and my CI/CD is powered by Jenkins. In my spare time I train Brazilian Jiu Jitsu.
+
+##Contact
+
+* Gmail: mehemken
+* GitHub: [mehemken][1]
+* Twitter: [@mehemken][2]
+
+##What I do
+
+* Cloud infrastructure (on AWS)
+* Configure your webserver (with Nginx)
+* CI/CD pipeline (with Jenkins)
+* Lightweight user interface (with Python/Flask)
+
+##Work
+
+If you'd like to hire me on a contract basis, please send me an email. I'm on Gmail using the same handle I use on this site. I actively pursue freelance projects as my time permits. My most recent project was setting up a Wordpress installation for a Brazilian Jiu Jitsu academy in Los Angeles. If you are not in Los Angeles, but would like to hire me, I am open to working remotely.
+
 ##This site is under construction
 
-I'll be adding a few things in the near future:
+More content coming soon...
 
-* A little bit about myself
-* PDF downloadable resume
-* Pictures
-
-I will initially have just two pages on this site: the home page and the resume page. The home page will feature some introductory blurb, some picture and links to GitHub, Twitter, LinkedIn etc. The resume page will have a downloadable resume. Perhaps I'll name the home page "About me" and the resume page "Resume". Maybe eventually I'll add a blog.
-
-It's been about a week and a half since I created these pages. Since I've done that, I've set up a server, messed with Nginx some as well as Jenkins. Now this site will be automatically updated when I push this to GitHub. (9 Apr 2017).
-
-Perhaps I'll need a blog here. I can definitely make it a static site blog. The longer it gets the longer it will take to py
-
-##Contact me
-
-The best way to contact me right now is on Twitter, my handle is [@mehemken](http://twitter.com). Send me a direct message. If we get along there I'll give you my email. Job offers are welcome. Especially if they are in the DevOps/Cloud category or they involve Linux and python.
-
-##View my code
-
-I have some code up on GitHub. Some of the stuff there, I'm proud of, but other stuff is just there because I needed to access it from multiple laptops. I have to upload one project in particular.
-
-##Pictures
-
-I'll be adding a few pictures of myself so you'll be able to recognize me if
-you see me. I do some Brazilian Jiu Jitsu and I have some action shots.
-
-##Foo
-
-bar baz spam eggs bacon
+[1]: https://github.com/mehemken "GitHub/mehemken"
+[2]: https://twitter.com/mehemken "twitter/mehemken"
