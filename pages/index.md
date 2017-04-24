@@ -4,7 +4,9 @@ lead: I write computer programs in python and build stuff on AWS.
 
 ##About
 
-I'm a developer and operations engineer in Los Angeles, CA. Most of my code is done with Python, with which I've written several programs and tools that automate git, docker, vim, tmux, and firefox. I currently use AWS for a few personal services that I've written in the Flask. Those are served up with Nginx and my CI/CD is powered by Jenkins. In my spare time I train Brazilian Jiu Jitsu.
+I'm a developer and operations engineer in Los Angeles, CA. My [AWS SysOps Admin - Associate][3] Certification is in progress. I plan on being certified by the end of May.
+
+Most of my code is done with Python, with which I've written several programs and tools that automate git, docker, vim, tmux, and firefox. I currently use AWS for a few personal services that I've written in the Flask. Those are served up with Nginx and my CI/CD is powered by Jenkins. In my spare time I train Brazilian Jiu Jitsu.
 
 ##Contact
 
@@ -29,3 +31,4 @@ More content coming soon...
 
 [1]: https://github.com/mehemken "GitHub/mehemken"
 [2]: https://twitter.com/mehemken "twitter/mehemken"
+[3]: https://aws.amazon.com/certification/certified-sysops-admin-associate/ "SysOps Cert"
