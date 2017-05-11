@@ -1,9 +1,11 @@
-{% extends 'layout.html' %}
+<html>
+    <head>
+	<title>Default</title>
+    </head>
+    <body>
+        <div>
+            <embed src="{{ url_for('static', filename='resume/resume.pdf') }}" />
+        </div>
+    </body>
+</html>
 
-{% block page_content %}
-    <h1>{{ page.title }}</h1>
-    <p class="lead">{{ page.lead }}</p>
-    <p><a href="{{ resume }}">Download as pdf</a></p>
-    <hr>
-    {{ page.html|safe }}
-{% endblock %}

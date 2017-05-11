@@ -6,6 +6,7 @@ import logging
 import subprocess
 import shlex
 import argparse
+import shutil
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG, format='%(message)s')
@@ -51,8 +52,6 @@ def run_tests():
         logger.exception('Could not run the tests')
     else:
         logger.info('Subprocess for tests started without a hitch...')
-    # finally:
-    #     sys.exit()
 
 
 def get_status():
@@ -109,6 +108,14 @@ def test_n_push():
         checkour_arg = shlex.split('git checkout devel')
         p = subprocess.call(push_arg)
         c = subprocess.call(checkour_arg)
+
+
+def get_resume():
+    # this is not implemented yet, but
+    # I'd like to add a command to pull
+    # my resume automatically from
+    # it's home in another directory.
+    pass
 
 
 if __name__ == '__main__':

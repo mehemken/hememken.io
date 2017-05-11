@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block page_content %}
+    <h1>{{ post.title }}</h1>
+    <p class="lead">{{ post.date }}</p>
+    <hr>
+    {{ post.html|safe }}
+{% endblock page_content %}
+
+{% block sidebar %}
+{% endblock sidebar %}

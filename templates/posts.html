@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block page_content %}
+            <h1>Blog</h1>
+            <p class="lead">Adapted from the Cloud Ops 101 meetup by <a href="https://www.meetup.com/LearnTeachCode/">Learn Teach Code</a></p>
+            <hr>
+
+            <ul class="list-group">
+            {% for post in posts %}
+            <a href="/blog/{{ post.slug }}/" class="list-group-item list-group-item-action">
+                <p>{{ post.date }}</p>
+                <p class="lead text-primary">{{ post.title }}</p>
+            </a>
+            <br>
+            {% endfor %}
+            </ul>
+
+            <!--
+            -->
+{% endblock page_content %}
+
+{% block sidebar %}
+{% endblock sidebar %}
