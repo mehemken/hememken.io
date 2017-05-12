@@ -41,7 +41,7 @@ def about():
 
 @app.route('/')
 def index():
-    return redirect(url_for('about'))
+    return redirect(url_for('blog'))
 
 @app.route('/resume/')
 def resume():

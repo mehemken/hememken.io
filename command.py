@@ -25,14 +25,14 @@ parser.add_argument('-b', '--build',
 parser.add_argument('-p', '--path',
         help='Print the build path.',
         action='store_true')
-parser.add_argument('-cd', '--commit',
+parser.add_argument('-c', '--commit',
         help='Commit latest changes to build/ devel branch.',
         action='store_true')
 parser.add_argument('-t', '--test',
         help='This will run the test suite on the development branch of the\
         build repo. If all tests pass changes will be pushed to devel origin.',
         action='store_true')
-parser.add_argument('-tp', '--test_and_push',
+parser.add_argument('-p', '--test_and_push',
         help='Run the test suite and push to origin',
         action='store_true')
 
