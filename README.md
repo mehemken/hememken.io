@@ -16,9 +16,9 @@ Then you'll need to use the command line tool to build the static site. The comm
 
 This command builds the static site in a sibling directory. So I recommend you have this directory structure:
 
-    mehemken.io
-    ├── app
-    └── build
+    container-dir/
+    ├── mehemken.io/
+    └── build/
 
 I have not tested this on any system but mine, so if you have trouble getting started, just let me know.
 
