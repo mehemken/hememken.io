@@ -1,5 +1,9 @@
 # Contributing
 
+These instructions are incomplete. It seems to mee I still have some work to do to make it easy for you to contribute. Updates coming soon.
+
+# If you want to contribute anyway
+
 To get started you'll need the [Anaconda distribution][2] of Python. Use Python 3.
 
 You will also need to use `conda` to create the dependencies for this project.
