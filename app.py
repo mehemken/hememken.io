@@ -33,34 +33,34 @@ def blog_post():
     for post in posts:
         yield {'name': post['slug']}
 
-# @app.route('/')
-# def index():
-#     page = pages.get_or_404('index')
-#     resume = url_for('static', filename='resume/resume.pdf')
-#     return render_template('index.html', page=page, resume=resume)
-
 @app.route('/about/')
 def about():
     page = pages.get_or_404('index')
-    resume = url_for('static', filename='resume/resume.pdf')
+    resume = url_for('resume')
     return render_template('index.html', page=page, resume=resume)
 
 @app.route('/')
 def index():
     return redirect(url_for('about'))
 
+@app.route('/resume/')
+def resume():
+    resume = url_for('static', filename='resume/resume.pdf')
+    return render_template('resume.html', resume=resume)
+
 @app.route('/blog/')
 def blog():
     posts = [p for p in pages if p.path.startswith(BLOG_POSTS_DIR)]
     posts.sort(key=lambda item:item['sortdate'], reverse=True)
-    resume = url_for('static', filename='resume/resume.pdf')
+    resume = url_for('resume')
     return render_template('posts.html', posts=posts, resume=resume)
 
 @app.route('/blog/<name>/')
 def blog_post(name):
     path = '{}/{}'.format(BLOG_POSTS_DIR, name)
     post = pages.get_or_404(path)
-    return render_template('blog_post.html', post=post)
+    resume = url_for('resume')
+    return render_template('blog_post.html', post=post, resume=resume)
 
 
 if __name__ == '__main__':

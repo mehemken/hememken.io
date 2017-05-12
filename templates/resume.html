@@ -1,11 +1,10 @@
-<html>
-    <head>
-	<title>Default</title>
-    </head>
-    <body>
-        <div>
-            <embed src="{{ url_for('static', filename='resume/resume.pdf') }}" />
-        </div>
-    </body>
-</html>
+{% extends 'layout.html' %}
+
+{% block page_content %}
+        <object width="1000" height="800" data="{{ resume }}">
+        </object>
+{% endblock page_content %}
+
+{% block sidebar %}
+{% endblock sidebar %}
 

@@ -1,0 +1,31 @@
+name: frozen-flask
+channels:
+- defaults
+dependencies:
+- click=6.7=py36_0
+- flask=0.12=py36_0
+- itsdangerous=0.24=py36_0
+- jinja2=2.9.5=py36_0
+- markupsafe=0.23=py36_2
+- openssl=1.0.2k=0
+- pip=9.0.1=py36_1
+- py=1.4.33=py36_0
+- pytest=3.0.7=py36_0
+- python=3.6.0=0
+- readline=6.2=2
+- requests=2.13.0=py36_0
+- setuptools=27.2.0=py36_0
+- sqlite=3.13.0=0
+- tk=8.5.18=0
+- werkzeug=0.11.15=py36_0
+- wheel=0.29.0=py36_0
+- xz=5.2.2=1
+- zlib=1.2.8=3
+- pip:
+  - flask-flatpages==0.6
+  - frozen-flask==0.13
+  - markdown==2.6.8
+  - pyyaml==3.12
+  - update==0.4.4
+prefix: /home/emilio/anaconda3/envs/frozen-flask
+
