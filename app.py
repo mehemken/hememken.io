@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 from flask import Flask, render_template, url_for, send_from_directory, redirect
-from flask_flatpages import FlatPages
+from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 
 DEBUG = True
@@ -17,7 +17,7 @@ FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'pages'
 BLOG_POSTS_DIR = 'posts'
-
+DRAFT_POSTS_DIR = 'drafts'
 build_path = '../build/files'
 FREEZER_DESTINATION = build_path
 
@@ -26,12 +26,6 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
 freezer = Freezer(app)
-
-@freezer.register_generator
-def blog_post():
-    posts = [p for p in pages if p.path.startswith(BLOG_POSTS_DIR) ]
-    for post in posts:
-        yield {'name': post['slug']}
 
 @app.route('/about/')
 def about():
@@ -62,6 +56,28 @@ def blog_post(name):
     resume = url_for('resume')
     return render_template('blog_post.html', post=post, resume=resume)
 
+@freezer.register_generator
+def blog_post():
+    posts = [p for p in pages if p.path.startswith(BLOG_POSTS_DIR) ]
+    for post in posts:
+        yield {'name': post['slug']}
+
+@app.route('/draft/<name>/')
+def draft(name):
+    path = '{}/{}'.format(DRAFT_POSTS_DIR, name)
+    post = pages.get_or_404(path)
+    resume = url_for('resume')
+    return render_template('blog_post.html', post=post, resume=resume)
+
+@freezer.register_generator
+def draft():
+    posts = [p for p in pages if p.path.startswith(DRAFT_POSTS_DIR) ]
+    for post in posts:
+        yield {'name': post['slug']}
+
+@app.route('/static/css/pygments.css')
+def pygments_css():
+    return pygments_style_defs(style='tango'), 200, {'Content-Type': 'text/css'}
 
 if __name__ == '__main__':
     handler = RotatingFileHandler('logs/mehemken.io.log', maxBytes=10000, backupCount=1)

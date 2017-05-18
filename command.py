@@ -22,7 +22,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-b', '--build',
         help='Build the static site.',
         action='store_true')
-parser.add_argument('-p', '--path',
+parser.add_argument('--path',
         help='Print the build path.',
         action='store_true')
 parser.add_argument('-c', '--commit',

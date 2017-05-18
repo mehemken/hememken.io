@@ -3,8 +3,10 @@
 {% block page_content %}
     <h1>{{ post.title }}</h1>
     <p class="lead">{{ post.date }}</p>
+    <p><a href="{{ post.twitter }}" target="blank" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-thumbs-up"></span> Comment on twitter!</a></p>
     <hr>
     {{ post.html|safe }}
+    <p><a href="{{ post.twitter }}" target="blank" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-thumbs-up"></span> Comment on twitter!</a></p>
 {% endblock page_content %}
 
 {% block sidebar %}
