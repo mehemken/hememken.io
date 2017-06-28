@@ -3,7 +3,7 @@ slug: basic-lambda
 date: 10 June 2017
 sortdate: 20170610
 teaser: Build a flask app with a button that triggers an AWS lambda function.
-twitter: #
+twitter: https://twitter.com/mehemken/status/873624525866270720
 
 ##Outline
 
