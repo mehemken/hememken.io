@@ -4,21 +4,24 @@ lead: I write computer programs in python and build infrastructure with Terrafor
 
 ##About
 
-I'm a junior automation engineer in Los Angeles, CA. I'm working on getting the [AWS Solutions Architect Associate][3] and I should have that in a few months.
+I'm a junior automation engineer in Los Angeles, CA. I'm working on getting the [AWS Solutions Architect Associate][3] this year.
 
-I work mostly with Python, which I've been using for a couple of years for personal projects. Currently, I'm using AWS for a few personal services that I've written in the Flask. Those are served up with Nginx and my CI/CD is powered by Jenkins. Although, I'm looking to switch to Buildbot because of my Python background. Jenkins runs on the JVM and my projects do not. For that reason I think Jenkins is not the right tool for this job.
+I work mostly with Python, which I've been using for a couple of years for personal projects. Currently, my interests lie in automating code deployment to the cloud. Most of my projects are built with Flask, however I've got a few projects going in Django and Go that I'll automate as well. My main tools for automation are Terraform and Ansible.
+
+I've been quite dissatisfied with Jenkins and Buildbot as CI/CD tools. They are too complicated to use for simple things like single page websites. I'm intersted in exploring the CI/CD space to find simpler tooling and methods and perhaps build my own FOSS solutions.
 
 In my spare time I train Brazilian Jiu Jitsu, follow the world chess elite tournaments and eat sushi in West Los Angeles.
 
 ##Hire me
 
-Does your team manually deploy code to production? Are you manually running your tests? Do you manually set up a staging environment? Would you run your tests more often if they were automated?
+I tutor various topics in programming and cloud at the introductory and intermediate levels. If you'd like to set up a single or recurring session, [contact me][7]! Subjects include
 
-You don't have to live with these pain points. All of this can be automated with well known, well documented, open source tools. I can help you set up a continuous pipeline tailored to your specific needs.
-
-I'm actively looking for full, part time or contract work that involves AWS, CI/CD and Python. If you already use other technologies such as Chef, golang, docker etc, I would be very excited to work with those tools as well!
-
-One example of my work is the [International JiuJitsu Education Fund][5] website. The infrastructure is all on AWS.
+* Python
+* Ansible
+* Terraform
+* CloudFormation
+* AWS
+* Go (coming soon)
 
 ##What I do
 
@@ -47,3 +50,4 @@ The best way to contact me is via email. It is on my [resume][6].
 [4]: https://www.meetup.com/LearnTeachCode/ "Look for Cloud Ops 101"
 [5]: http://www.i-jef.org/ "Int'l JiuJitsu Education Fund"
 [6]: http://mehemken.io/resume "Resume"
+[7]: mailto:mehemken@gmail.com "Marco Hemken"
